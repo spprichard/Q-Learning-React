@@ -10,7 +10,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Q-Learning Agent</h1>
         </header>
-        
+        <h1> This is a test</h1>
+
 
       </div>
     );
