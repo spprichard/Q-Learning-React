@@ -36,5 +36,4 @@ describe(HelloWorld, () => {
         expect(mockRemoveGreeting).toBeCalled();
     });
 
-    
 });
