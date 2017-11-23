@@ -31,6 +31,22 @@
   padding: 20px;
 }
 
+.ResetButton{
+  margin-left: 30px;
+  color: white;
+  background: #003cffa6;
+  width: 17%;
+  height: 45px;
+}
+
+.RegularButton {
+  margin-left: 30px;
+  color: white;
+  background: #00b7fffd;
+  width: 17%;
+  height: 45px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
