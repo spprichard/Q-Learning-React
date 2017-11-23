@@ -1,5 +1,6 @@
 dist: precise
 language: node_js
+
 cache:
   directories:
   - node_modules
@@ -10,8 +11,3 @@ install: true
 env:
   global:
     - USE_YARN=no
-
-matrix:
-  include:
-    - node_js: 0.10
-      env: TEST_SUITE=simple
