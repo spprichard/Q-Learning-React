@@ -11,9 +11,6 @@
     "react-test-renderer": "^16.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "CI=true react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "CI=true react-scripts test --env=jsdom"
   }
 }
