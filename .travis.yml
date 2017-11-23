@@ -11,7 +11,7 @@ cache:
   - node_modules
 
 scripts:
-  - npm install --save react react-dom react-scripts
+  - yarn
   - yarn test
   - npm run build
 
