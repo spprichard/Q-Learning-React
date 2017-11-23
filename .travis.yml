@@ -11,7 +11,8 @@ cache:
     - node_modules
 
 scripts:
-  - yarn
+  - rm -rf node_modules
+  - npm install
   - yarn test
   - npm run build
 
