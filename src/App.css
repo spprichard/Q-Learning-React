@@ -22,6 +22,14 @@
   font-size: large;
 }
 
+.AddGreeter {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #00FFD8;
+  background: #DDFFEE;
+  text-align: center;
+}
+
 .HelloWorld {
   border: 2px solid black;
   text-align: center;
@@ -52,6 +60,13 @@
   background: #00b7fffd;
   width: 17%;
   height: 45px;
+}
+
+.Title{
+  margin-left: auto;
+  max-width: 25%;
+  text-align: center;
+  margin-right: auto;
 }
 
 @keyframes App-logo-spin {

@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-import HelloWorld from "./HelloWorld"
+import HelloWorld from "./HelloWorld";
+import AddGreeter from "./AddGreeter";
 
 class HelloWorldList extends Component{
     constructor(props){
         super(props);
+        this.addGreeting = this.addGreeting.bind(this);
         this.state = {
-            greetings: ["James","Tess", "Steven", "Carlos"]
+            greetings: []
         }
+    }
+
+    addGreeting(newName){
+        this.setState({
+            greetings: [...this.state.greetings, newName]
+        });
     }
 
     renderGreetings(){
@@ -19,6 +27,7 @@ class HelloWorldList extends Component{
     render(){
         return(
         <div className="HelloWorldList">
+            <AddGreeter addGreeting={this.addGreeting}/>
             {this.renderGreetings()}
         </div>
         );
