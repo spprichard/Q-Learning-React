@@ -2,17 +2,16 @@ dist: precise
 sudo: required
 language: node_js
 node_js:
-- stable
+  - stable
 install: true
-before_script:
-- export CI=false
+
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
 env:
   global:
-  - CI=true
+    - CI=true
 deploy:
   provider: heroku
   api_key:
