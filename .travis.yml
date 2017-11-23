@@ -1,20 +1,26 @@
 dist: precise
-sudo: required
 language: node_js
 node_js:
-  - stable
-install: true
+  - 6
+  - 8
 cache:
-  yarn: true
   directories:
-    - node_modules
+  - node_modules
+  - packages/create-react-app/node_modules
+  - packages/react-scripts/node_modules
+install: true
+script:
+ - 'if [ $TEST_SUITE = "simple" ]; then tasks/e2e-simple.sh; fi'
+ - 'if [ $TEST_SUITE = "installs" ]; then tasks/e2e-installs.sh; fi'
+ - 'if [ $TEST_SUITE = "kitchensink" ]; then tasks/e2e-kitchensink.sh; fi'
 env:
   global:
-    - CI=true
-deploy:
-  provider: heroku
-  api_key:
-    secure: N/93bS2qg/NJ9QG4MWsWz9KctTxrgLSwJaCZz8bBhJKVzzUEqEo5iaZb4OA/pAkjZvnR0cfLzxCAYuVbs8G464ByEFjxzBl0ikbElZhfd7kPjAIWR8RQNK4sgK1MvFRghHalc6svK6WMb/Y/WECs/skT8PtGsJKiJCKZwBk4GjtPAaFvz8B2SQA9AQLSYVmYM69lakG9mmsLWmGtH9ARXCurFLJCf/QA9kV7wthk7JfjQAbooxz3+A23Iimm8G/URoYLIo9Qyw1ijeckmro2AfEohDceQaQJv19K+6V2bF6PkEiDzbMRiShrP1KBkUkRWWM/r/+71Ylhr9ZRgyV1j+msBGsTBR2i9Sdz6Fhm6ABL5z5NfoQI7J9+bEoLUQgQkjyUGxEe+0Z6FOGvaal7wYLg6VZ0gQHpeurrbHL4seWzuRyAEXnDu4ZKOtA2j1xAFPXOlUgS4wHoeg4rvd2KOQGmr52IxNSQGm5a47A4qGJLxc1z3seFzEH/Yc0mRkV0xWwoGUWqqqE7MSN/TJxiQhQXmY66GRT0c4aXKRdKp+1GH7cPNPRQ/aZ2YtHP6llUaqHKybSP3+P3a0WAswIre+WU35wJ6irVVNR6B11K5kSFYD0YQtvOq9LWANP1EZYeXN4RhaPFlh7WLwqdQAYusCllzIbnzeFStWAl4V6sf2w=
-  app: Q-Learning-React
-  on:
-    repo: spprichard/Q-Learning-React
+    - USE_YARN=no
+  matrix:
+    - TEST_SUITE=simple
+    - TEST_SUITE=installs
+    - TEST_SUITE=kitchensink
+matrix:
+  include:
+    - node_js: 0.10
+      env: TEST_SUITE=simple
