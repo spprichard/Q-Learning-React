@@ -14,7 +14,7 @@ class HelloWorld extends Component {
 
   frenchify(){
     this.setState({
-      greeting: "Bonjur "
+      greeting: "Bonjour "
     });
   }
 
@@ -33,7 +33,7 @@ class HelloWorld extends Component {
       <div className="HelloWorld">
         <h1>{this.state.greeting} {this.props.name}!</h1>
         <br/>
-        <button className="RegularButton" onClick={this.frenchify}>Frenchify!</button>
+        <button className="FrenchifyButton" onClick={this.frenchify}>Frenchify!</button>
         <button className="ResetButton" onClick={this.resetGreeting}>Reset</button>
         <button className="RemoveButton" onClick={this.removeGreeting}>Remove Me</button>
       </div>
