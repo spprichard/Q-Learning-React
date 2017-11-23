@@ -3,18 +3,16 @@ sudo: required
 language: node_js
 node_js:
   - stable
-install: true
-
-cache:
-  yarn: true
-  directories:
-    - node_modules
-
 scripts:
   - rm -rf node_modules
   - npm install
   - yarn test
   - npm run build
+install: true
+
+cache:
+  directories:
+    - node_modules
 
 deploy:
   provider: heroku
