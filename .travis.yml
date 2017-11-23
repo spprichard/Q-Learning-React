@@ -2,19 +2,17 @@ dist: precise
 sudo: required
 language: node_js
 node_js:
-  - stable
+- stable
 script:
-  - yarn test
+- yarn test
 install: true
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 deploy:
   provider: heroku
   api_key:
-    secure: N/93bS2qg/NJ9QG4MWsWz9KctTxrgLSwJaCZz8bBhJKVzzUEqEo5iaZb4OA/pAkjZvnR0cfLzxCAYuVbs8G464ByEFjxzBl0ikbElZhfd7kPjAIWR8RQNK4sgK1MvFRghHalc6svK6WMb/Y/WECs/skT8PtGsJKiJCKZwBk4GjtPAaFvz8B2SQA9AQLSYVmYM69lakG9mmsLWmGtH9ARXCurFLJCf/QA9kV7wthk7JfjQAbooxz3+A23Iimm8G/URoYLIo9Qyw1ijeckmro2AfEohDceQaQJv19K+6V2bF6PkEiDzbMRiShrP1KBkUkRWWM/r/+71Ylhr9ZRgyV1j+msBGsTBR2i9Sdz6Fhm6ABL5z5NfoQI7J9+bEoLUQgQkjyUGxEe+0Z6FOGvaal7wYLg6VZ0gQHpeurrbHL4seWzuRyAEXnDu4ZKOtA2j1xAFPXOlUgS4wHoeg4rvd2KOQGmr52IxNSQGm5a47A4qGJLxc1z3seFzEH/Yc0mRkV0xWwoGUWqqqE7MSN/TJxiQhQXmY66GRT0c4aXKRdKp+1GH7cPNPRQ/aZ2YtHP6llUaqHKybSP3+P3a0WAswIre+WU35wJ6irVVNR6B11K5kSFYD0YQtvOq9LWANP1EZYeXN4RhaPFlh7WLwqdQAYusCllzIbnzeFStWAl4V6sf2w=
+    secure: Pz2IKh9hF1GxyFKFLbqSLkM+mrQU13hmfCPBPnDdDkPKMN7eORmqG5jPL+kBsHwxRvVcBCUmwLrqF59WBipq5G7klAZK5gY5OgW1Bsk0ch7WkoWZZUYUvoGB0VwGz73JViE1R1R28/qBxEPQO5wi5ch5ao7vErBkyJKqOBht6bpS21vHaLGJoEysd+pUXPiAEc0VsrSARIxedfHX0pxoEYIOBgAj/wPYlqY+JrPIck9kd3rvlq6d696c9QYIV5VWHf0JBeCS/lk9N0JBHP0aqOcC2F7GSz0cMDSRmKg4q24X7t/9T+qGaRI85YoEP229dxItUHg/f8mmiARU2vY175q6jBZ7wP4FdtRwbbi5w+eE8++Gtn8hJd3zwpcx67YlogDMjL14wyPhRJpzyIzz8n//VWdEGkU79nezk2+xQtGDpDFTQG10Ro6vVwyb2u0Ssd/wpW2WNApxq/4tEWYiNedbgWMBTxDV6E9SLETJRInCt7XVP995TiWfH44U40UGstRL6UBzqiHib0SjptjJ76tTOcQDS2r7roRS0YSo9rjLUL2BG9iwgSvT+W05LOhmtzpczr7DY2WxlHxwbu65WOLFxJEeeKAaTqjPOBJo3tgLjHCuEHUFsVXs9pN6S1PU/Cd6OebAHqbKCfyDbw+C4gRrlY45LU2G6nt27k/WvaI=
   app: qlearner
   on:
     repo: spprichard/Q-Learning-React
