@@ -13,10 +13,6 @@ install: true
 env:
   global:
     - USE_YARN=no
-  matrix:
-    - TEST_SUITE=simple
-    - TEST_SUITE=installs
-    - TEST_SUITE=kitchensink
 matrix:
   include:
     - node_js: 0.10
