@@ -8,7 +8,7 @@ install: true
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
 
 scripts:
   - yarn
