@@ -3,7 +3,7 @@ sudo: required
 language: node_js
 node_js:
   - stable
-scripts:
+script:
   - rm -rf node_modules
   - npm install
   - yarn test
