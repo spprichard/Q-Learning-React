@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
 
-// class HelloWorld extends Component {
-//   render(props) {
-//     return (
-//       <div className="HelloWorld">
-//         <h1>Hello {props.name}!</h1>
-//       </div>
-//     );
-//   }
-// }
+class HelloWorld extends Component {
+  constructor(props){
+    super(props);
+    this.frenchify = this.frenchify.bind(this)
+    this.state = {
+      greeting: "Hello "
+    };
+    
+  }
 
-const HelloWorld = (props) => {
-  return (
-    <div className="HelloWorld">
-      <h1>Hello {props.name}!</h1>
-    </div>
-  );
+  frenchify(){
+    this.setState({
+      greeting: "Bonjur "
+    });
+  }
+
+  render() {
+    return (
+      <div className="HelloWorld">
+        <h1>{this.state.greeting} {this.props.name}!</h1>
+        <br/>
+        <button onClick={this.frenchify}>Frenchify!</button>
+      </div>
+    );
+  }
 }
 
 export default HelloWorld;
