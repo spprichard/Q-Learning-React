@@ -11,8 +11,8 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Q-Learning Agent</h1>
         </header>
-        <HelloWorld/>
-        <HelloWorld/>
+        <HelloWorld name="Tess"/>
+        <HelloWorld name="Steven"/>
       </div>
     );
   }
