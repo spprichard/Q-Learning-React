@@ -4,7 +4,7 @@ import logo from './../logo.svg';
 import './../App.css';
 import HelloWorldList from "./../components/HelloWorldList";
 import Home from './../components/Home';
-import Nav from './../components/Nav/Nav';
+import Nav from './../components/Nav';
 
 class App extends Component {
   render() {
