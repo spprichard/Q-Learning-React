@@ -51,6 +51,7 @@ exports[`class HelloWorld extends _react.Component {
       Enter your name:
     </p>
     <input
+      className="Input"
       onChange={[Function]}
       type="text"
       value=""
