@@ -2,9 +2,9 @@ import React from 'react';
 import { shallow, render } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import HelloWorldList from './components/HelloWorldList';
-import HelloWorld from './components/HelloWorld';
-import AddGreeter from './components/AddGreeter';
+import HelloWorldList from './../components/HelloWorldList';
+import HelloWorld from './../components/HelloWorld';
+import AddGreeter from './../components/AddGreeter';
 
 describe(HelloWorld, () => {
     const component = shallow(

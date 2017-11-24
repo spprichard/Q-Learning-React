@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import AddGreeter from './components/AddGreeter';
+import AddGreeter from './../components/AddGreeter';
 
 describe(AddGreeter, () => {
     const mockAddGreeting = jest.fn();
