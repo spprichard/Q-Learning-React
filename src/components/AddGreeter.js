@@ -30,7 +30,7 @@ class AddGreeter extends Component {
                 <p className="Title">Enter your name:</p>
                 <input type="text" onChange={this.handleUpdate} value={this.state.greetingName}/>
                 &nbsp;&nbsp;
-                <button onClick={this.addGreeting}>Add</button>
+                <button className="AddButton" onClick={this.addGreeting}>Add</button>
             </div>
         );
     }

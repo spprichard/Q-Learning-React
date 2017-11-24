@@ -70,6 +70,13 @@
   height: 45px;
 }
 
+.AddButton {
+  color: white;
+  background: #31e61b;
+  width: 10%;
+  height: 30px;
+}
+
 .Title{
   margin-left: auto;
   max-width: 25%;

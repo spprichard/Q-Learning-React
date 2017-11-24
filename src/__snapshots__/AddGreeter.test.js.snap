@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`class AddGreeter extends _react.Component {
+    constructor(props) {
+        super(props);
+        this.handleUpdate = this.handleUpdate.bind(this);
+        this.addGreeting = this.addGreeting.bind(this);
+        this.state = {
+            greetingName: '' };
+
+    }
+
+    addGreeting() {
+        this.props.addGreeting(this.state.greetingName);
+        this.setState({
+            greetingName: '' });
+
+    }
+
+    handleUpdate(event) {
+        this.setState({
+            greetingName: event.target.value });
+
+
+    }
+
+    render() {
+        return (
+            _react2.default.createElement('div', { className: 'AddGreeter', __source: { fileName: _jsxFileName, lineNumber: 29 }, __self: this },
+                _react2.default.createElement('p', { className: 'Title', __source: { fileName: _jsxFileName, lineNumber: 30 }, __self: this }, 'Enter your name:'),
+                _react2.default.createElement('input', { type: 'text', onChange: this.handleUpdate, value: this.state.greetingName, __source: { fileName: _jsxFileName, lineNumber: 31 }, __self: this }), '\\xA0\\xA0',
+
+                _react2.default.createElement('button', { className: 'AddButton', onClick: this.addGreeting, __source: { fileName: _jsxFileName, lineNumber: 33 }, __self: this }, 'Add')));
+
+
+    }} renders and matches our snapshot 1`] = `
+<div
+  className="AddGreeter"
+>
+  <p
+    className="Title"
+  >
+    Enter your name:
+  </p>
+  <input
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+    
+  <button
+    className="AddButton"
+    onClick={[Function]}
+  >
+    Add
+  </button>
+</div>
+`;

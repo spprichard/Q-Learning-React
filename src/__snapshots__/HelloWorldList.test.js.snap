@@ -57,6 +57,7 @@ exports[`class HelloWorld extends _react.Component {
     />
       
     <button
+      className="AddButton"
       onClick={[Function]}
     >
       Add
