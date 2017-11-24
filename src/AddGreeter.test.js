@@ -32,7 +32,6 @@ describe(AddGreeter, () => {
         const updateKey = "foo";
         component.instance().handleUpdate({target: {value: updateKey}});
         expect(component.state('greetingName')).toEqual(updateKey);
-
     });
 
     it("clears out the greetingName when button is clicked", () => {
@@ -40,7 +39,6 @@ describe(AddGreeter, () => {
         component.instance().handleUpdate({
             target: {value: updateKey}
         });
-
         expect(component.state('greetingName')).toEqual(updateKey);
         component.find('button').simulate('click');
         expect(component.state('greetingName')).toHaveLength(0);

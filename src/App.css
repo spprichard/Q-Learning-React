@@ -81,9 +81,27 @@
   height: 20px;
 }
 
+.Nav{
+  position: relative;
+  display: grid;
+  max-width: min-content;
+  top: -115px;
+}
+
+.Link{  
+    border: 2px;
+    padding: 15px;
+    color: white;
+    background: cornflowerblue;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
 .Title{
   margin-left: auto;
-  max-width: 25%;
+  max-width: 30%;
   text-align: center;
   margin-right: auto;
 }
