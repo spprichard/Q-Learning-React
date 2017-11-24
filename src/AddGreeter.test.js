@@ -10,7 +10,7 @@ describe(AddGreeter, () => {
         <AddGreeter addGreeting={mockAddGreeting}/>
     );
 
-    it('renders and matches our snapshot', () => {
+    it("renders and matches our snapshot", () => {
         const component = renderer.create(
             <AddGreeter/>
         );
@@ -21,6 +21,11 @@ describe(AddGreeter, () => {
     it("comtains form elements", () => {
         expect(component.find('input')).toHaveLength(1);
         expect(component.find('button')).toHaveLength(1);
+    });
+
+    it("calls add greeter when add button is clicked", () => {
+        component.find("button").simulate('click');
+        expect(mockAddGreeting).toBeCalled();
     });
 
 
