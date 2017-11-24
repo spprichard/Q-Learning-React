@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
-import logo from './../../logo.svg';
-import './../../App.css';
-import HelloWorldList from "./../../components/HelloWorldList";
-import Home from './../../components/Home';
-import Nav from './../../components/Nav/Nav';
+import logo from './../logo.svg';
+import './../App.css';
+import HelloWorldList from "./../components/HelloWorldList";
+import Home from './../components/Home';
+import Nav from './../components/Nav/Nav';
 
 class App extends Component {
   render() {
