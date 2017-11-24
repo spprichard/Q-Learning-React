@@ -4,7 +4,7 @@ import logo from './../../logo.svg';
 import './../../App.css';
 import HelloWorldList from "./../../components/HelloWorldList";
 import Home from './../../components/Home';
-import Nav from './../../components/nav/Nav';
+import Nav from './../../components/Nav/Nav';
 
 class App extends Component {
   render() {
@@ -16,11 +16,10 @@ class App extends Component {
           <Nav className="Nav"/>
         </header>
 
-          {/* <HelloWorldList/> */}
-          <main>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/hello" component={HelloWorldList}/>
-            </main>
+        <main>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/hello" component={HelloWorldList}/>
+        </main>
       </div>
     );
   }
