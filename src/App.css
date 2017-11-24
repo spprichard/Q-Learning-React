@@ -77,6 +77,10 @@
   height: 30px;
 }
 
+.Input{
+  height: 20px;
+}
+
 .Title{
   margin-left: auto;
   max-width: 25%;
