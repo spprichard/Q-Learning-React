@@ -5,6 +5,7 @@ import './../App.css';
 import HelloWorldList from "./../components/HelloWorldList";
 import Home from './../components/Home';
 import Nav from './../components/Nav';
+import LearnerCreate from './../components/LearnerCreate';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <main>
             <Route exact path="/" component={Home} />
             <Route exact path="/hello" component={HelloWorldList}/>
+            <Route exact path="/learner" component={LearnerCreate}/>
         </main>
       </div>
     );

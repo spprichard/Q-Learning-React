@@ -7,6 +7,7 @@ class Nav extends Component{
             <div className="Nav">
                 <Link className="Link" to="/">Home</Link>
                 <Link className="Link" to="/hello">Hello</Link>
+                <Link className="Link" to="/learner">Learner</Link>
             </div>
         )
     }
