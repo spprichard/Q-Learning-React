@@ -20,7 +20,7 @@ class HelloWorldList extends Component{
 
     removeGreeting(removeName){
         const filteredGreetings = this.state.greetings.filter(name => {
-            return name != removeName;
+            return name !== removeName;
         });
         this.setState({greetings: filteredGreetings});
     }
